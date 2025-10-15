@@ -1,0 +1,10 @@
+.main {
+  display: grid;
+  row-gap: 100px;
+
+  @include contentpaddinginline;
+
+  @include ontable {
+    row-gap: 140px;
+  }
+}

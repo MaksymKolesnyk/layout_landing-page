@@ -1,0 +1,18 @@
+.footer {
+  width: 100%;
+  height: 35vh;
+  background-image: url(../images/footer/mobile-footer.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @include ontable {
+    background-image: url(../images/footer/tablet-footer.png);
+    height: 40vh;
+  }
+
+  @include ondesctop {
+    background-image: url(../images/footer/computer-footer.png);
+    height: 35vh;
+  }
+}

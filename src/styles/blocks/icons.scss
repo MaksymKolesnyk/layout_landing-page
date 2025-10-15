@@ -1,0 +1,30 @@
+.icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include hover(transform, scale(1.2));
+
+  @media (min-width: 576px) {
+    width: 32px;
+    height: 32px;
+  }
+  &--phone {
+    background-image: url('../images/icon/phone.png');
+  }
+
+  &--burger {
+    background-image: url('../images/icon/burger.png');
+
+    &:hover {
+      background-image: url('../images/icon/burger-hover.png');
+      transition: all 300ms;
+    }
+  }
+
+  &--close {
+    background-image: url('../images/icon/close.png');
+  }
+}

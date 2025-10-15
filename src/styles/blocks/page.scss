@@ -1,0 +1,40 @@
+.page {
+  font-family: Cinzel, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+
+  scroll-behavior: smooth;
+
+  &:has(.page__menu:target) {
+    overflow: hidden;
+  }
+
+  &__body {
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+  }
+
+  &__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    transition: all $trans;
+    transform: translate(200%);
+
+    opacity: 0;
+    pointer-events: none;
+
+    &:target {
+      opacity: 1;
+      pointer-events: all;
+      transform: translate(0);
+    }
+  }
+
+  &__main {
+    margin-block: 140px;
+  }
+}

@@ -1,0 +1,126 @@
+.now-on-view {
+  @include gridcontent;
+
+  row-gap: 48px;
+
+  &__header {
+    grid-column: span 2;
+
+    @include ontable {
+      grid-column: 2 / -2;
+    }
+
+    @include ondesctop {
+      grid-column: 5 / -5;
+    }
+  }
+
+  &__title-text {
+    @include cinzelregular16;
+
+    text-align: center;
+  }
+
+  &__carts {
+    grid-column: span var(--columns);
+
+    @include ontable {
+      grid-column: span var(--columns);
+    }
+
+    @include ondesctop {
+      grid-column: span var(--columns);
+    }
+
+    @include grid;
+  }
+
+  &__link {
+    position: relative;
+
+    &--disable {
+      @include ontable {
+        display: none;
+      }
+
+      @include ondesctop {
+        display: block;
+      }
+    }
+
+    &--wide {
+      @include ontable {
+        grid-column: span 4;
+      }
+
+      @include ondesctop {
+        grid-column: span 8;
+      }
+    }
+
+    &--square {
+      height: 0;
+      padding-bottom: 100%;
+
+      @include ontable {
+        grid-column: span 2;
+      }
+
+      @include ondesctop {
+        grid-column: span 4;
+      }
+    }
+
+    &--expand-grid-3 {
+      @include ontable {
+        grid-column: span 3;
+      }
+
+      @include ondesctop {
+        grid-column: span 4;
+      }
+    }
+  }
+
+  &__photos {
+    @include gridcontent;
+
+    margin-bottom: 24px;
+
+    &--mobile-grid {
+      @media (max-width: 575px) {
+        --columns: 3;
+      }
+    }
+  }
+
+  &__cart {
+    display: grid;
+  }
+
+  &__photo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    &--position-left {
+      object-position: 17%;
+    }
+
+    &--position-right {
+      object-position: 100%;
+    }
+  }
+
+  &__card-header {
+    color: $redColor;
+
+    @include zeromarpad;
+  }
+
+  &__card-text {
+    @include zeromarpad;
+    @include cinzelregular16;
+  }
+}

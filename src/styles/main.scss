@@ -1,3 +1,17 @@
-body {
-  margin: 0;
-}
+@import './blocks/utils/variable';
+@import './blocks/utils/mixins';
+@import './blocks/page';
+@import './blocks/header';
+@import './blocks/top-bar';
+@import './blocks/icons';
+@import './blocks/menu';
+@import './blocks/menu-nav';
+@import './blocks/store';
+@import './blocks/main-content';
+@import './blocks/section-title';
+@import './blocks/museum-hours';
+@import './blocks/now-on-view';
+@import './blocks/explore';
+@import './blocks/contact';
+@import './blocks/form';
+@import './blocks/footer';

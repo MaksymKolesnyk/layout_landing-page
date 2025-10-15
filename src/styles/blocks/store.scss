@@ -1,0 +1,27 @@
+.menu__store-contact {
+  margin-bottom: 16px;
+}
+
+.store-contact {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.store {
+  color: #fff;
+  line-height: 27px;
+
+  &__number {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.call-to-order {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  width: fit-content;
+}

@@ -1,0 +1,54 @@
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 25px;
+
+  @include contentpaddinginline;
+
+  @include ontable {
+    padding-block: 50px;
+  }
+
+  &__logo--link {
+    display: flex;
+
+    @include hover(transform, scale(1.2));
+  }
+
+  &__logo--phone {
+    @include ontable {
+      display: none;
+    }
+  }
+
+  &__logo--desktop {
+    display: none;
+
+    @include ontable {
+      display: block;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__store-contact {
+    position: fixed;
+    right: 221px;
+    text-align: right;
+    opacity: 0;
+
+    transition: all 0.3s;
+    transform: translateX(20%);
+
+    pointer-events: none;
+    &:target {
+      opacity: 1;
+      transform: translateX(0);
+      pointer-events: all;
+    }
+  }
+}

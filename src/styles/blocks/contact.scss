@@ -1,0 +1,61 @@
+.contact {
+  @include gridcontent;
+
+  row-gap: 48px;
+
+  &__article {
+    grid-column: span 2;
+
+    @include ontable {
+      grid-column: 1 / 4;
+    }
+
+    @include ondesctop {
+      grid-column: span 3;
+    }
+
+    &-header {
+      margin: 0 0 16px;
+
+      @include cinzelbold16;
+    }
+  }
+
+  &__header {
+    grid-column: 1 / -1;
+  }
+
+  &__phone {
+    margin: 0 0 8px;
+
+    &-header {
+      margin: 0 0 4px;
+      color: $contactColor;
+
+      @include cinzelregular16;
+    }
+
+    &-number {
+      margin: 0;
+      text-decoration: none;
+
+      @include cinzelbold16;
+    }
+  }
+
+  &__address {
+    &-header {
+      margin: 0 0 4px;
+      color: $contactColor;
+
+      @include cinzelregular16;
+    }
+
+    &-link {
+      margin: 0;
+      text-decoration: none;
+
+      @include cinzelbold16;
+    }
+  }
+}

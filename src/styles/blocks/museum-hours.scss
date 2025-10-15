@@ -1,0 +1,95 @@
+.about {
+  @include gridcontent;
+
+  &__header {
+    grid-column: 1 / -1;
+
+    @include ontable {
+      grid-column: 1 / 4;
+    }
+
+    @include ondesctop {
+      grid-column: 1 / 6;
+    }
+  }
+  &__plan {
+    @include zeromarpad;
+
+    color: $redColor;
+    font-size: 12px;
+    line-height: 140%;
+  }
+
+  &__contant {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+
+    @include ontable {
+      grid-column: 4 / -1;
+    }
+
+    @include ondesctop {
+      grid-column: 6 / -1;
+    }
+  }
+
+  &__article-header {
+    margin: 0;
+  }
+
+  &__article {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+
+  &__hours {
+    display: flex;
+    column-gap: 24px;
+  }
+}
+
+.hours {
+  &__list {
+    @include zeromarpad;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+  }
+
+  &__item {
+    @include cinzelregular16;
+
+    list-style: none;
+    font-weight: 700;
+  }
+}
+
+.days {
+  &__list {
+    @include zeromarpad;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+  }
+
+  &__item {
+    list-style: none;
+
+    @include cinzelregular16;
+  }
+}
+
+.closed-day {
+  margin: 0;
+  font-weight: 400;
+  line-height: 27px;
+
+  &__bold {
+    font-weight: 700;
+  }
+}
