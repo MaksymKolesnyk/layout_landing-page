@@ -1,7 +1,7 @@
 .menu {
   box-sizing: border-box;
   height: 100vh;
-  background: #d12d35;
+  background: $redColor;
   overflow: auto;
 
   &__nav {

@@ -40,14 +40,15 @@
     width: 100%;
     height: 56px;
     border: none;
-    background-color: #d12d35;
+    background-color: $redColor;
+    cursor: pointer;
 
     @include cinzelregular16;
 
     font-weight: 700;
     color: #fff;
     &:hover {
-      background-color: #ae1c23;
+      background-color: $redOnHover;
     }
   }
 }

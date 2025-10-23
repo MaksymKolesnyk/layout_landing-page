@@ -12,7 +12,7 @@
     height: 32px;
   }
   &--phone {
-    background-image: url('../images/icon/phone.png');
+    background-image: url('../images/icon/phone.png'); 
   }
 
   &--burger {
@@ -26,5 +26,17 @@
 
   &--close {
     background-image: url('../images/icon/close.png');
+  }
+
+  &-wrapper-hover {
+    position: relative;
+
+    @include ondesctop {
+        &:hover .store-contact {
+          opacity: 1;
+          transform: translateX(1%);
+          pointer-events: all;
+        } 
+      }
   }
 }
