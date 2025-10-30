@@ -1,9 +1,4 @@
 .header {
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  row-gap: 110px;
-  height: 100vh;
   background-image: url('../images/header/computer.png');
   background-position: center;
   background-size: cover;
@@ -11,7 +6,15 @@
   @include ondesctop {
     row-gap: 30px;
   }
-
+  &__container {
+    @include contentpaddinginline;
+    
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 110px;
+    height: 100vh;
+  }
   &__title {
     color: #fff;
     font-size: 40px;

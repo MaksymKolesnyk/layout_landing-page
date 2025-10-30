@@ -7,8 +7,8 @@
   &__nav {
     margin-bottom: 32px;
   }
-}
 
-.menu__content {
-  @include contentpaddinginline;
+  &__container {
+    @include contentpaddinginline;
+  }
 }

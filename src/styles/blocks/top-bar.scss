@@ -4,8 +4,6 @@
   align-items: center;
   padding-block: 25px;
 
-  @include contentpaddinginline;
-
   @include ontable {
     padding-block: 50px;
   }
