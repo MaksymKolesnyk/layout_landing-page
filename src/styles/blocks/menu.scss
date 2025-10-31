@@ -9,6 +9,9 @@
   }
 
   &__container {
+    max-width: 1260px;
+    margin: auto;
+
     @include contentpaddinginline;
   }
 }
