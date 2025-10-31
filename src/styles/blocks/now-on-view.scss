@@ -111,6 +111,8 @@
     &--position-right {
       object-position: 100%;
     }
+
+    @include hover(transform, scale(1.05));
   }
 
   &__card-header {
